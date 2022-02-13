@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	color: hsl(210, 21%, 73%);
+	background-color: rgb(0, 30, 50);
+}
+.flexbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.game-container {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	text-align: center;
+}
+.results {
+	height: 30vh;
+	box-sizing: content-box;
+	justify-content: center;
+	h3 {
+		height: fit-content;
+		block-size: fit-content;
+	}
+}
+.user-computer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		font-size: 1.3rem;
+		margin: 2rem;
+		border-radius: 10px;
+	}
+	.user {background-color: rgb(0, 150, 100);}
+	.computer {background-color: rgb(190, 70, 0);}
+}
+.btn {
+	border: 1px solid hsl(180, 21%, 73%);
+	border-radius: 5px;
+	padding: 1%;
+	font-size: 2.5rem;
+	&:hover {background-color: rgb(0, 40, 70);}
+}
